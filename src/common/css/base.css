@@ -1,0 +1,118 @@
+/* 基础样式 */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-weight: normal;
+  font-family:"Helvetica Neue",Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  /* &:hover {
+    outline: none;
+  } */
+}
+html,body,#app,.wrapper,.page{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+  background: #FFF;
+  /* margin: 0px!important; */
+}
+
+@media screen and (min-width: 500px) {
+
+  body {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+/*flex布局*/
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page-content {
+  position: absolute;
+  top: 44px;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-overflow-scrolling: touch;
+}
+/* 子元素-平均分栏 */
+
+.flex1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+
+/* 父元素-横向换行 */
+
+.flex-hw {
+  /* 12版 */
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+
+/* 父元素-水平居中（主轴是横向才生效） */
+
+.flex-hc {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+
+/*等间距排列，首尾不留白*/
+
+.flex-hb {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/*等间距排列，首尾留白*/
+
+.flex-ha {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+
+/* 父元素-纵向换行 */
+
+.flex-vw {
+  /* 12版 */
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+/* 父元素-竖直居中（主轴是横向才生效） */
+
+.flex-vc {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
